@@ -1,0 +1,223 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	x:Class="bleachquest.gametwo"
+	x:Name="Window"
+	Title="gametwo"
+	Width="1145" Height="729" Background="#FFC9AC29" Icon="pack://siteoforigin:,,,/icons.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+	<Window.Resources>
+		<Storyboard x:Key="loademblemi">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o2">
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="154"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o8">
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="154"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o5">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="144.668"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o11">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="144"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o6">
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="152.75"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="o6">
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="4"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="o9">
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o9">
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="153.999"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o1">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="152"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o3">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="152"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o10">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="146"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o4">
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="144.002"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="o7">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.5" Value="126.002"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="144.002"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="o12">
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="o13">
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource loademblemi}"/>
+		</EventTrigger>
+	</Window.Triggers>
+
+	<Grid x:Name="LayoutRoot" Margin="0,0,0,-21">
+		<Image x:Name="gotey13" HorizontalAlignment="Left" Height="728" VerticalAlignment="Top" Width="1137" Source="pack://siteoforigin:,,,/логоотрядов.png" Panel.ZIndex="-1"/>
+		<Image x:Name="o1" HorizontalAlignment="Left" Height="100" Margin="365,-144.333,0,0" VerticalAlignment="Top" Width="65.5" Source="278246.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonUp="o1_MouseLeftButtonUp">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior x:Name="o1move"/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o2" HorizontalAlignment="Left" Height="100" Margin="9.333,-144.333,0,0" VerticalAlignment="Top" Width="61" Source="o2.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonUp="o2_MouseLeftButtonUp">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior x:Name="o2move"/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o3" HorizontalAlignment="Left" Height="100" Margin="807,-144.333,0,0" VerticalAlignment="Top" Width="52" Source="o3.jpg" RenderTransformOrigin="0.5,0.5" MouseLeftButtonUp="o3_MouseLeftButtonUp">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior x:Name="o3move"/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o4" HorizontalAlignment="Left" Height="100" Margin="279.5,-144.333,0,0" VerticalAlignment="Top" Width="56.5" Source="o4.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior x:Name="o4move"/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o5" HorizontalAlignment="Left" Height="100" Margin="96.667,-144.333,0,0" VerticalAlignment="Top" Width="64" Source="o5.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior x:Name="o5move"/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o6" HorizontalAlignment="Left" Height="100" Margin="186.5,-144.333,0,0" VerticalAlignment="Top" Width="67" Source="o6.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o7" HorizontalAlignment="Left" Height="100" Margin="641,-144.333,0,0" VerticalAlignment="Top" Width="59.5" Source="o7.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o8" HorizontalAlignment="Left" Height="100" Margin="1044.5,-144.333,0,0" VerticalAlignment="Top" Width="76" Source="o8.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o9" HorizontalAlignment="Left" Height="100" Margin="879,-144.333,0,0" VerticalAlignment="Top" Width="52" Source="o9.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o10" HorizontalAlignment="Left" Height="100" Margin="719,-144.333,0,0" VerticalAlignment="Top" Width="65.5" Source="o10.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o11" HorizontalAlignment="Left" Height="100" Margin="953.5,-144.333,0,0" VerticalAlignment="Top" Width="70" Source="o11.jpg" RenderTransformOrigin="0.5,0.5">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o12" HorizontalAlignment="Left" Height="100" Margin="340.5,368.5,0,0" VerticalAlignment="Top" Width="59.833" Source="o12.jpg" Opacity="0.005">
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<Image x:Name="o13" HorizontalAlignment="Left" Height="100" Margin="710,368.5,0,0" VerticalAlignment="Top" Width="59.5" Source="o13.jpg" Opacity="0.005">
+			<i:Interaction.Behaviors>
+				<ei:MouseDragElementBehavior/>
+			</i:Interaction.Behaviors>
+		</Image>
+		<TextBlock HorizontalAlignment="Left" Margin="70.333,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" Text="{Binding X, ElementName=o1move}"/>
+		<TextBlock HorizontalAlignment="Left" Margin="581,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" Text="{Binding Y, ElementName=o1move}"/>
+	</Grid>
+</Window>
